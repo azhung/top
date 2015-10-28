@@ -1,0 +1,481 @@
+*{ margin: 0; padding: 0;}
+
+@font-face {
+	font-family: UTM-American;
+	src: url('../fonts/utm_american_sans.ttf');
+}
+
+@font-face{
+	font-family: UTMAvoBold;
+	src: url('../fonts/UTMAvoBold.ttf');
+}
+
+@font-face{
+	font-family: UTMAvo;
+	src: url('../fonts/UTMAvo.ttf');
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+
+.opensans {
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+.gray{ background-color: #f8f8f8;}
+.white{ background-color: #ffffff;}
+
+.section{
+	padding: 40px 0;
+}
+
+li{
+	list-style: none;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+#header{
+	height: 600px;
+	background: url('imgs/banner-bg.png'), url('imgs/bg-bottom-header.png');
+	background-position: top left, bottom left;
+	background-repeat: repeat-x;	
+	position: relative;
+	z-index: 99;
+}
+
+.logo{ margin-top: 8px;}
+
+#header .call-act{
+	font-family: UTMAvoBold;
+	font-size: 47px;
+	color: #fa1900;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#header .date-open{
+	font-family: UTMAvo;
+	font-size: 26px;
+	margin-top: 65px;
+}
+
+.header-boy{
+	position: absolute;
+	top: 17em;
+	left: 11em;		
+}
+
+.header-girl{
+	position: absolute;
+	top: 17em;
+	right: 11em;	
+}
+
+.clock-count{
+	padding-left: 30px;
+	margin-top: -50px;
+}
+
+.clock-count .day{
+	margin-left: 25px;
+}
+
+.clock-count .hour{
+	margin-left: 67px;
+}
+
+.clock-count .minute{
+	margin-left: 68px;
+}
+
+.clock-count .second{
+	margin-left: 69px;
+}
+
+.clock-count span{
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.date-open{
+	position: relative;
+    z-index: 1;         
+}
+
+.date-open:before{	
+    border-top: 2px solid #dfdfdf;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 85%;
+    z-index: -1;    
+}
+
+.date-open span{
+    background: #fff; 
+    padding: 0 30px;     
+}
+
+.menu-bar{ 
+	border: 1px solid #000;
+	border-radius: 30px 30px 0 0; 
+	font-family: sans-serif;	
+	padding-left: 3%;
+	position: absolute;
+	bottom: 0;
+}
+
+.menu li{ 	
+	list-style: none;
+	display: inline;
+}
+
+.menu li a:hover{
+	border: none !important;
+	border-radius: 0;
+	background-color: #eca03e !important;
+}
+
+.menu li a:hover .menu li a{
+	color: #fff !important;
+}
+
+.menu li a{ 
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #616162;
+}
+
+.website-blog{ 
+	margin-bottom: 25px;
+}
+
+.make-money{
+	margin-bottom: 50px;
+}
+
+.rule span{
+	color: #ff6600;
+	font-weight: bold;
+}
+
+.one-m{
+	padding-top: 15px !important;
+	padding-bottom: 20px !important;
+}
+
+.time-open span{
+	font-weight: bold;
+}
+
+.text-yellow{
+	color: #ff6600;
+}
+
+/* Section */
+.section h2{ 
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 35px;
+	color: #6a6a6a;
+	margin-left: 55px;
+	padding-left: 70px;
+	padding-bottom: 10px;
+	padding-top: 5px;	
+}
+
+.method-title{
+	background: url('imgs/icon-method.png') no-repeat top left;
+}
+
+.prize-title{
+	background: url('imgs/icon-prize.png') no-repeat top left;	
+}
+
+.for-accesstrade-title{
+	background: url('imgs/icon-for-accesstrade.png') no-repeat top left;	
+}
+
+/* Cach Thuc Tham Gia */
+
+.method-menu li{
+	border: 2px solid #fd6132;
+	line-height: 45px;
+	border-radius: 5px;
+	height: 45px;	
+	margin-top: 25px;
+}
+
+.method-menu li a{
+	font-family: sans-serif;
+	font-size: 19px;
+	color: #767676;
+	display: block;
+	padding-left: 50px;	
+	text-decoration: none;
+	font-weight: bold;	
+}
+
+.not-active{
+	background: url('imgs/icon-circle.png') no-repeat 15px 15px;
+}
+
+.active{
+	background: url('imgs/icon-arow.png') no-repeat 10px 11px;
+	background-color: #fd6132;	
+}
+
+.active a{
+	color: #fff !important;
+}
+
+.condition-content{
+	border: 2px solid #fd6132;	
+	border-radius: 5px;
+	padding: 23px 18px;
+	font-size: 19px;
+	font-family: sans-serif;
+	margin-top: 25px;
+	display:block;
+}
+
+.method-content{
+	border: 2px solid #fd6132;	
+	border-radius: 5px;
+	padding: 23px 18px;
+	font-size: 19px;
+	font-family: sans-serif;
+	margin-top: 95px;	
+	display:none;
+}
+
+/* End Cach Thuc Tham Gia */
+
+/* Giai thuong */
+
+.img-special{
+	max-width: 123%;	
+}
+
+.giainhat h3{
+	text-align: center;
+	color: #fe0000;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.giainhat .list-prize-nhat li{
+	list-style: url('imgs/giainhat-li.png');		
+	font-family: sans-serif;
+	font-size: 15px;
+	margin-top: 25px;
+	color: #000;	
+}
+
+.giainhat .list-prize-nhat li span{
+	font-weight: bold;
+	color: #fe0000;
+}
+
+/*Giai nhi*/
+.giainhi h3{
+	text-align: center;
+	color: #0099ff;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.giainhi .list-prize-nhi li{
+	list-style: url('imgs/giainhi-li.png');		
+	font-family: sans-serif;
+	font-size: 15px;
+	margin-top: 25px;
+	color: #000;	
+}
+
+.giainhi .list-prize-nhi li span{
+	font-weight: bold;
+	color: #0099ff;
+}
+
+/*Giai ba*/
+.giaiba h3{
+	text-align: center;
+	color: #e450e2;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.giaiba .list-prize-ba li{
+	list-style: url('imgs/giaiba-li.png');		
+	font-family: sans-serif;
+	font-size: 15px;
+	margin-top: 25px;
+	color: #000;	
+}
+
+.giaiba .list-prize-ba li span{
+	font-weight: bold;
+	color: #e450e2;
+}
+
+/*Giai nhat thang*/
+.giainhatthang h3{
+	text-align: center;
+	color: #ff6600;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.giainhatthang .list-prize-nhatthang li{
+	list-style: url('imgs/giainhatthang-li.png');		
+	font-family: sans-serif;
+	font-size: 15px;
+	margin-top: 25px;
+	color: #000;	
+}
+
+.giainhatthang .list-prize-nhatthang li span{
+	font-weight: bold;
+	color: #ff6600;
+}
+
+/*Giai an tuong*/
+.giaiantuong h3{
+	text-align: center;
+	color: #33cc00;
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.giaiantuong .list-prize-antuong li{
+	list-style: url('imgs/giaiantuong-li.png');		
+	font-family: sans-serif;
+	font-size: 15px;
+	margin-top: 25px;
+	color: #000;	
+}
+
+.giaiantuong .list-prize-antuong li span{
+	font-weight: bold;
+	color: #33cc00;
+}
+
+.other-prize{
+	margin-top: 120px;
+}
+
+/* End Giai thuong */
+
+/* Accesstrade */
+
+.accesstrade-desc p{
+	font-family: Roboto;
+	font-size: 13px;
+	line-height: 26px;	
+}
+
+.btn-more{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	background-color: #ef8700;
+	border-radius: 5px;
+	padding: 10px 60px;
+}
+
+.btn-video{
+	text-transform: uppercase;
+	border: 2px solid #ef8700;
+	color: #ef8700;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 10px 60px;
+}
+
+.accesstrade-img{
+	margin-top: 115px;
+}
+
+.email-send img{
+	margin-bottom: 23px;
+}
+
+.email-send span{
+	font-size: 18px;
+	color: #0c1d31;
+	margin-top: 20px;
+}
+
+.phone24h img{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.phone24h .phone-number-vn{
+	font-size: 18px;
+	color: #0c1d31;
+	margin-left: 15%;
+}
+
+.phone-number-vn tr td:first-child{
+	text-align: right;
+	padding-right: 15px;
+}
+
+.footer{
+	background: #202020;
+	padding: 30px 0 20px 0;
+}
+
+.footer .social i{
+	margin: 0 4px;
+	color: #999999;
+	font-size: 17px;
+}
+
+.footer-text{ 
+	font-size: 14px;
+	color: #999999;
+}
+
+/*Modal video*/
+
+#videoModal .modal-content{
+	border: 5px solid #ff501e;
+}
+
+.logo-video{
+	width: 40%;
+	margin-bottom: 20px;
+}
+
+.btn-close-video{
+	width: 30px;
+	height: 30px;
+	border: 2px solid #ff501e !important;	
+	border-radius: 50%;
+	opacity: 1 !important;
+	color: #ff7050 !important;
+}
+
+
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px; /* height of link element */
+    right: 30px; /* padding from the left side of the window */
+}
